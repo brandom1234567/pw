@@ -1,73 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayuda a un peludo</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        body {
-            margin: 60px;
-            background-color: rgb(254, 230, 255);  
-            text-align: center;       
-        }
-
-        h1, h2 {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        p, a, ul {
-            font-family: Arial, Helvetica, sans-serif;
-            display: inline-block;
-            text-align: left;
-        }
-
-        li {
-            padding-right: 20px;
-        }
-
-        .container {
-            display: inline-block;
-            vertical-align: middle;
-            margin-bottom: 20px;
-        }
-
-        .container img {
-            margin-right: 30px;
-            vertical-align: middle;
-        }
-
-    </style>
 </head>
 
 <body>
-    <h1 style="background-color: rgb(145, 29, 168); color: whitesmoke; padding: 10px;">ONG - AYUDA A UN PELUDO</h1>
-    <p style = "font-size: 16px;">¡Bienvenidos/as! Somos una organización dedicada a brindar amor y atención a los animales que viven<br> 
-    en situación de calle. Nuestra misión es encontrar hogares amorosos para estos peludos amigos y<br>
-    promover la adopción responsable. Trabajamos incansablemente para mejorar la calidad de vida de <br>
-    los animales y crear conciencia sobre la importancia su protección. ¡Ayúdanos a cambiar vidas!</p>
+    <h1 >ONG - AYUDA A UN PELUDO</h1>
 
-    <h2>Nuestros Integrantes:</h2>
-    <ul style="font-size: 17px; background-color: rgb(145, 29, 168); color: whitesmoke; line-height: 1.5; padding-top: 10px; padding-bottom: 10px;">
-        <li>Gladys Marín Millie - Presidente</li>
-        <li>Caroline Polachek - Vicepresidenta</li>
-        <li>Lane Kim - Coordinadora de Adopciones</li>
-        <li>Florencio Aguirre - Veterinario</li>
-        <li>Olga Montini - Tesorera</li>
-        <li>Roman Roy - Secretario</li>
-        <li>Fiona Apple McAfee Maggart - Asesora Legal</li>
-        <li>Vicente Fredes Estuardo - Programador Web</li>
-    </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <!-- comentario por acá -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
 
-    <h2>Nuestras Secciones de Ayuda:</h2>
-    <div class="container">
-        <img src="imagenes/iconoGato.png" alt="gatos" width="100px" height="100px">
-        <a href="gato.html">Gatos</a>
-    </div>
-    <br>
-    <div class="container">
-        <img src="imagenes/iconoPerro.png" alt="perros" width="100px" height="100px">
-        <a href="perro.html">Perros</a>
-    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="imagenes/perro1.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="titulo_mas">Adopta</h5>
+                <p class="titulo_abajo">Salva una Vida</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="imagenes/perro2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="imagenes/gato1.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    
 </body>
 </html>

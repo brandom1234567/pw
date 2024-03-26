@@ -1,0 +1,46 @@
+body {
+    margin: 60px;
+    background-color: rgb(254, 230, 255);  
+    text-align: center;       
+}
+
+h1, h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p, a, ul {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    text-align: left;
+}
+
+li {
+    padding-right: 20px;
+}
+
+.container {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.container img {
+    margin-right: 30px;
+    vertical-align: middle;
+}
+
+.titulo_mas{
+    color: orange;
+    font-size: 70px;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 400px;
+
+}
+.titulo_abajo{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 300px;
+    margin-right: 400px;
+
+}
