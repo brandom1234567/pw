@@ -1,8 +1,7 @@
 body {
     
     margin: 60px;
-    background: url(imagenes/fondo.jpg);   
-    text-align: center;   
+    background-color: rgb(197, 194, 194);
 }
 
 h1, h2 {
@@ -10,6 +9,7 @@ h1, h2 {
 }
 h5{
     color: aqua;
+    text-align:start;
 }
 
 p, a, ul {
@@ -70,4 +70,8 @@ li {
 
     text-align: left;
 }
+form{
+    background-color: rgb(124, 119, 109);
+}
+
 
