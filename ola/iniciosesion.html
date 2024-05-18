@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="ESTILAZO.CSS">
+ 
+
+
+  <title>Iniciar Sesión</title>
+
+
+  <style>
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+</head>
+
+
+
+<body>
+
+<div class="navbar">
+  <a class="active" href="cosa.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="nosotros.html"><i class="fa fa-fw fa-search"></i> nosotros</a>
+  <a href="contacto.html"><i class="fa fa-fw fa-envelope"></i> Contacto</a>
+  <a href="iniciosesion.html"><i class="fa fa-fw fa-user"></i> Login</a>
+</div>
+
+
+<br>
+
+
+<div class="container">
+  <h2>Iniciar Sesión</h2>
+  <form action="procesar_login.php" method="post">
+    <input type="text" name="username" placeholder="Nombre de Usuario" required>
+    <input type="password" name="password" placeholder="Contraseña" required>
+    <input type="submit" value="Iniciar Sesión">
+  </form>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

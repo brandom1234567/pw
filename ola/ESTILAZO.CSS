@@ -1,63 +1,6 @@
-body {margin: 0;}
-
-ul.sidenav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 15%;
-  background-color: #8a9689;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
-
-ul.sidenav li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
- 
-ul.sidenav li a.active {
-  background-color: #227ed4;
-  color: rgb(232, 236, 231);
-}
-
-ul.sidenav li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-div.content {
-  margin-left: 25%;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
-@media screen and (max-width: 900px) {
-  ul.sidenav {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  
-  ul.sidenav li a {
-    float: left;
-    padding: 15px;
-  }
-  
-  div.content {margin-left: 0;}
-}
-
-@media screen and (max-width: 400px) {
-  ul.sidenav li a {
-    text-align: center;
-    float: none;
-  }
-}
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 30%;
   }
@@ -67,6 +10,11 @@ div.content {
   }
   
   .container {
+
+    align-items: center;
+    justify-content: center;
+    
+
     padding: 2px 20px;
   }
 
@@ -74,8 +22,8 @@ div.content {
     border: none;
     outline: 0;
     padding: 12px;
-    color: rgb(212, 38, 38);
-    background-color: #000;
+    color: rgb(253, 253, 253);
+    background-color: #227ed4;
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -102,7 +50,7 @@ div.content {
   /* Float four columns side by side */
   .column {
     float: right;
-    width: 25%;
+    width: 40%;
     padding: 0 10px;
   }
   
@@ -256,4 +204,118 @@ img {
   margin-top: 35px;
   text-align: center;
 }
-  
+
+
+
+
+
+
+
+
+
+
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .active {
+  color: #f1f1f1;
+}
+.content {
+  margin-left: 260px;
+  padding: 16px;
+}
+.cart {
+  margin-top: 20px;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.cart-item button {
+  padding: 5px 10px;
+  border: none;
+  background: #dc3545;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
